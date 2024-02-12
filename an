@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для анюты</title>
+    <style>
+        /* Ваш CSS-код */
+        body {
+            font-family: 'Comfortaa', cursive;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffdede;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff3b3b;
+        }
+
+        .hero {
+            background-image: url('valentine-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero-content {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .cta-button {
+            display: none;
+        }
+
+
+        }
+
+.photos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    text-align: center; /* Новый стиль: выравнивание текста по центру */
+}
+
+.inserted-photo {
+    max-width: 25%;
+    height: auto;
+    background-color: #ffc4c4;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    animation: fadeIn 2s ease-in-out;
+    margin: 0 auto; /* Новый стиль: отцентрирование блока с фотографией */
+}
+
+.inserted-photo img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+        }
+
+.valentine-message {
+    border: 2px solid #ff3b3b;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Новый стиль: тень для выделения блока */
+}
+
+.valentine-message h2 {
+    color: #ff3b3b;
+}
+
+.valentine-message p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.valentine-message::before {
+    content: '❤️';
+    font-size: 36px;
+    color: #ff3b3b;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Люблю тебя анюта</div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>С днем святого валентина, Аня</h1>
+            <p>Это все специально для тебя.</p>
+        </div>
+    </section>
+
+    <div class="photos-container" id="photoContainer">
+        <!-- Добавленный блок с изображением 1 -->
+        <div class="inserted-photo" id="photo1" style="display: block;">
+            <img src="https://sun9-6.userapi.com/impg/dPUhLOijAQRn6k4ITkqoud5QxBnf_GfoXmao2Q/YggH5ssYH3E.jpg?size=960x1280&quality=95&sign=320a7b2e554c249a7943ac40e6c6a2af&type=album" alt="Inserted Photo 1">
+        </div>
+
+        <!-- Добавленный блок с изображением 2 -->
+        <div class="inserted-photo" id="photo2" style="display: none;">
+            <img src="https://sun9-79.userapi.com/impg/YNKwfk3M0MCBnoCbKvzrxCnMJXAgWj43uxH9Kw/NQ5h_eVMLpM.jpg?size=605x807&quality=95&sign=0bbf664727c5e0518b533e74764985e8&c_uniq_tag=grwBVLqsm3jxyHAR37hFdy_8-JQ-4ihmRmpyvtwJtq4&type=album" alt="Inserted Photo 2">
+        </div>
+
+       <!-- Добавленный блок с изображением 3 -->
+<div class="inserted-photo" id="photo3" style="display: none;">
+    <img src="https://sun9-40.userapi.com/impg/zoFapoUH5Rq6M-ohByBCe5LXh1ua4GKu3Sgr4w/pkGPLy5sd2U.jpg?size=807x605&quality=95&sign=f0011bfdbc632e06ec3c53e23e299615&c_uniq_tag=gmkw641tR_rwjK10AXZl_HoE55jeqosyhth7ag_qIX8&type=album" alt="Inserted Photo 3">
+</div>
+    </div>
+
+    <div class="valentine-message">
+        <h2>Для любимой анечки:</h2>
+        <p>Привет, Анюта! На этот особенный день хочу выразить тебе свои самые искренние чувства. С днём святого Валентина, моя дорогая! Пусть эти моменты будут наполнены особенной атмосферой тепла, ласки и понимания. Желаю, чтобы каждый ваш общий момент становился драгоценным воспоминанием.</p>
+
+        <p>Анечка, ты для меня как радуга среди серых будней, и я ценю каждое твоё присутствие в моей жизни. Твоя поддержка и забота делают наши дни яркими и неповторимыми. Пусть этот день будет началом новых волнующих приключений для нас обоих.</p>
+
+        <p>Аня, сегодня я хочу подчеркнуть, как важна для меня каждая деталь в наших отношениях. Ты придаёшь моей жизни особый смысл, и я благодарен за твою любовь и преданность. Пусть впереди нас ждут только счастливые моменты и долгие года счастья вместе. Люблю тебя, Жаня.</p>
+    </div>
+
+    <script>
+        let currentPhotoIndex = 0;
+        const photos = document.querySelectorAll('.inserted-photo');
+
+        function showPhoto(index) {
+            photos.forEach((photo, i) => {
+                photo.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextPhoto() {
+            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+            showPhoto(currentPhotoIndex);
+        }
+
+        setInterval(nextPhoto, 10000); // Интервал смены фотографий (10 секунд)
+    </script>
+
+</body>
+
+</html> 
